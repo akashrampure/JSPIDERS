@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <form>
+        <label>Skills:</label>
+        <select multiple>
+            <option value="java">Java</option>
+            <option value="sql">Sql</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
+    </form>
+    <hr>
+    <!--datalist-->
+    <label>College:</label>
+    <input type="text" placeholder="Enter college Name" list="college">
+    <datalist id="college">
+        <option value="SCE">Sapthagiri college of engineering</option>
+        <option value="UVCE">University visvesvaraih college of engineering</option>
+        <option value="RV">RV college of engineering </option>
+    </datalist>
+    <hr>
+    <!--radio boxes-->
+    <label>Gender: </label>
+    <input type="radio" name="gender">
+    <label for="male">male</label>
+    <input type="radio" name="gender">
+    <label for="female">female</label>
+    <input type="radio" name="gender">
+    <label for="others">others</label>
+    <hr>
+    <!--check boxes-->
+    <label>Skills:</label>
+    <input type="checkbox" id="java">
+    <label for="java">Java</label>
+    <input type="checkbox" id="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" id="js">
+    <label for="js">Javascript</label>
+</body>
+</html>
