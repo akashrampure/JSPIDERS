@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body
+{
+    background-color: rgba(211, 211, 211, 0.521);
+}
 .parent
 {
     display: flex;
@@ -12,8 +16,8 @@
 }
 .navbar
 {
-    /* background-color: aliceblue; */
-    /* width: 100%; */
+    background-color:white;
+    width: 100%;
     position: fixed;
     padding: 13px;
     z-index: 1.0;
@@ -46,7 +50,7 @@
 {
     color: rgb(91, 91, 91);
     padding: 5px;
-    font-size: 25px;
+    font-size: 23px;
 }
 .fa-twitter
 {
@@ -82,9 +86,9 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 15px;
-    position: relative;
-    left: 580px;
-    top:400px;
+    /* position: relative; */
+    margin-left: 600px;
+    margin-top: 400px;
 }
 .banner-content p
 {
@@ -157,3 +161,161 @@
     color: rgb(0, 176, 0);
 }
 /* main ends */
+
+/* card starts */
+.card
+{
+    /* border: 1px solid black; */
+    margin-left: 100px;
+    padding: 15px;
+    width: 90%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.card-contents
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-contents div
+{
+    width: 400px;
+    height: 270px;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s;
+    /* border: 1px solid black; */
+}
+.card-contents .one,.card-contents .two,.card-contents .three,.card-contents .four,.card-contents .five,.card-contents .six
+{
+    padding: 20px;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: white;
+    text-align: center;
+}
+.card-contents h2
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-contents div:hover
+{
+    box-shadow: 5px 5px 5px 5px lightgray;
+}
+.card-contents .fa
+{
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    padding: 15px;
+    background-color: rgba(211, 211, 211, 0.427);
+    font-size: 30px;
+
+}
+.fa-dribbble
+{
+    color: aqua;
+    transition: all .8s;
+}
+.fa-dribbble:hover
+{
+ background-color: aqua;
+ color: white;
+}
+.fa-file-text-o
+{
+    color: orangered;
+    transition: all .8s;
+}
+.fa-file-text-o:hover
+{
+    background-color: orangered;
+    color: white;
+}
+.fa-tachometer
+{
+    color: crimson;
+    transition: all .8s;
+}
+.fa-tachometer:hover
+{
+    background-color: crimson;
+    color: white;
+}
+.fa-stack-overflow
+{
+    color: orange;
+    transition: all .8s;
+}
+.fa-stack-overflow:hover
+{
+    background-color: orange;
+    color: white;
+}
+.fa-play-circle-o
+{
+    color: rgb(184, 51, 3);
+    transition: all .8s;
+}
+.fa-play-circle-o:hover
+{
+    color: white;
+    background-color:rgb(184, 51, 3) ;
+}
+.fa-home
+{
+    color: lightseagreen;
+    transition: all .8s;
+}
+.fa-home:hover
+{
+    color: white;
+    background-color: lightseagreen;
+}
+/* card ends */
+
+/* client starts */
+.client
+{
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 200px;
+    margin-left: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.client div
+{
+    border: 1px solid lightgray;
+    width: 250px;
+    height: 100px;
+}
+.client div img 
+{
+    width: 100%;
+    height: 100%;
+    scale: 0.4;
+    padding: 8px;
+    text-align: center;
+    filter: grayscale();
+    transition: all .8s;
+} 
+.client div img:hover
+{
+    filter: none;
+    scale: 0.5;
+}
+.client-heading
+{
+    margin-left: 50%;
+    border-bottom: 3px solid green;
+    color: rgb(84, 84, 84);
+    margin-bottom: 25px;
+}
+/* client ends */
